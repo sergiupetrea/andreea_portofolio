@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Marketing Nexus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f0f1a;
+      --accent: #00fff7;
+      --text: #ffffff;
+      --card-bg: #1a1a2e;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-bottom: 2px solid var(--accent);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: var(--accent);
+    }
+
+    header p {
+      color: #bbb;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 15px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      box-shadow: 0 0 10px rgba(0, 255, 247, 0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px var(--accent);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    form {
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      box-shadow: 0 0 15px rgba(0, 255, 247, 0.1);
+    }
+
+    input, textarea, button {
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    input, textarea {
+      background: #2a2a40;
+      color: var(--text);
+    }
+
+    button {
+      background: var(--accent);
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #00c9c2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      border-top: 1px solid #333;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Marketing Nexus</h1>
+    <p>Inovație. Strategie. Impact.</p>
+  </header>
+
+  <div class="container">
+
+    <!-- Servicii -->
+    <section>
+      <h2>Servicii</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Social+Media" alt="Serviciu">
+          <h3>Social Media Management</h3>
+          <p>Gestionăm paginile tale cu conținut fresh și captivant.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=SEO" alt="Serviciu">
+          <h3>SEO & Optimizare</h3>
+          <p>Îți ducem site-ul în topul rezultatelor Google.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Branding" alt="Serviciu">
+          <h3>Branding</h3>
+          <p>Construim o identitate vizuală memorabilă pentru afacerea ta.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portofoliu -->
+    <section>
+      <h2>Portofoliu</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Client+A" alt="Proiect">
+          <h3>Campanie Instagram - Client A</h3>
+          <p>Creștere cu 200% a engagementului în doar 30 de zile.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Client+B" alt="Proiect">
+          <h3>Site nou pentru Client B</h3>
+          <p>Design modern și integrare completă cu Google Ads.</p>
+        </div>
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200?text=Client+C" alt="Proiect">
+          <h3>Branding complet - Client C</h3>
+          <p>Logo, culori, ton de comunicare și guideline complet.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contactează-ne</h2>
+      <form>
+        <input type="text" placeholder="Nume" required>
+        <input type="email" placeholder="Email" required>
+        <textarea rows="5" placeholder="Mesajul tău..." required></textarea>
+        <button type="submit">Trimite Mesaj</button>
+      </form>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 Marketing Nexus | contact@nexusmarketing.ro | 0722 555 333
+  </footer>
+
+</body>
+</html>
