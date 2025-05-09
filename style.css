@@ -19,25 +19,20 @@ body {
 }
 
 header {
-  text-align: center;
-  padding: 3rem 1rem;
-  background: var(--bg);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-}
-
-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 1rem;
   text-align: center;
+  padding: 2rem 1rem;
 }
 
+/* Stil pentru logo */
 header img {
   max-width: 150px;
   height: auto;
   margin-bottom: 1rem;
-  border-radius: 8px; /* opțional, dacă vrei colțuri rotunjite */
+  border-radius: 8px;
+}
 }
 
 header h1 {
@@ -195,10 +190,6 @@ footer {
     padding: 1rem;
   }
 
-  header h1 {
-    font-size: 2.2rem;
-  }
-
   section h2 {
     font-size: 2rem;
   }
@@ -220,16 +211,13 @@ footer {
     margin-bottom: 0;
   }
 
-  header h1,
-  header p {
+  header h1 {
+    font-size: 2rem;
     margin: 0;
   }
 
-  header h1 {
-    font-size: 2rem;
-  }
-
   header p {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    margin: 0;
   }
 }
