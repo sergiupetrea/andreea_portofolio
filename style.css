@@ -146,6 +146,24 @@ footer {
   margin-top: 4rem;
 }
 
+.whatsapp-button {
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 10px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebe5d;
+}
+
 /* Responsive padding */
 @media (max-width: 768px) {
   .container {
