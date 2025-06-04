@@ -103,7 +103,7 @@ section h2 {
 }
 
 .card video:nth-of-type(2) {
-  width: 100%;
+  width: 40%;
   max-width: 300px; /* sau cât dorești */
   height: auto;
   border-radius: 12px;
