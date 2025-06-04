@@ -102,6 +102,13 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+.card video:nth-of-type(2) {
+  width: 100%;
+  max-width: 300px; /* sau cât dorești */
+  height: auto;
+  border-radius: 12px;
+}
+
 .card h3 {
   font-size: 1.3rem;
   color: var(--accent);
